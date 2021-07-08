@@ -1,0 +1,33 @@
+$s: 50vw;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  background: #A2AAAD;
+}
+
+.thing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border: 10px solid transparent;
+  border-color: #7BAFD4 #FFFFFF #13294B #8D9092;
+  border-radius: 25%;
+  animation: thing 10s cubic-bezier(0.35, -0.14, 0.79, 1.22) infinite;
+}
+
+@keyframes thing {
+  100% {
+    transform: rotateZ(2turn);
+  }
+}
